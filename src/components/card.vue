@@ -51,6 +51,8 @@ export default {
   .card-desc{
     width: 95px;
     font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.2;
     color: #676B7B;
     overflow : hidden;
     text-overflow: ellipsis;

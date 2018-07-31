@@ -10,10 +10,10 @@
               :list="topList"
         />
         <i-list
-              :list="soonList"
+              :list="usFilmList"
         />
         <i-list
-              :list="topList"
+              :list="hotList"
         />
   </div>
 </template>
@@ -22,10 +22,6 @@
 import list from '@/components/list'
 import slider from '@/components/slider'
 export default {
-  data () {
-    return {
-    }
-  },
   computed:{
     bannerList(){
       return this.$store.state.sliderList
@@ -35,7 +31,13 @@ export default {
     },
     topList(){
       return this.$store.state.topList
-    }  
+    },
+    hotList(){
+      return this.$store.state.hotList
+    },
+    usFilmList(){
+      return this.$store.state.usFilmList
+    }
   },
   components: {
     'i-list':list,
@@ -54,6 +56,11 @@ export default {
     // 获取即将上映数据
     const soonData = await this.$fly.get('/comming-soon')
           this.$store.commit('getSoonList',soonData.data.data)
+    // 获取北美电影数据
+    const usfilmData = await this.$fly.get('/usfilm')
+          this.$store.commit('getUsFilmList',usfilmData.data.data)
+    const hotData = await this.$fly.get('/hot-list')
+          this.$store.commit('getHotList',hotData.data.data)
   }
 }
 </script>

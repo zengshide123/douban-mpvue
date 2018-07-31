@@ -13,9 +13,9 @@ export default {
     },  
     methods:{
         handleClick(){
-            wx.switchTab({
-                 url:'/pages/team/main'
-                })
+            wx.navigateTo({
+                 url: '/pages/detail/main?cate=hot'
+            })
         }
     } 
 }

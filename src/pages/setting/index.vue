@@ -1,5 +1,5 @@
 <template>
-    <h3>设置页</h3>
+    <h3>本页面尚不准备开发</h3>
 </template>
 <script>
 export default {

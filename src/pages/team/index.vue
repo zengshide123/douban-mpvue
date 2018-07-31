@@ -1,5 +1,5 @@
 <template>
-    <h3>您成功跳转到个人页面</h3>
+    <h3>本页面尚不准备开发</h3>
 </template>
 <script>
 export default {
