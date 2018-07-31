@@ -28,8 +28,8 @@ npm run build --report
     mpvue对slot渲染有限制
     css中不能直接写标签名
     v-for语句中暂时不支持复杂的js表达式不能直接使用parseInt方法
-    属性style直接传入styleObject
-    支持mouseover和mouseout  
+    属性style不能直接传入styleObject
+    不支持mouseover和mouseout  
 ``` 
  - 路径跳转
  ```
